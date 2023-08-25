@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket scorecard</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="default.css">
+    <script src = "./scripts/app.js" type="module"></script>
+
+</head>
+<body>
+
+    <div> 
+        <button type="button" id="back"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvvjJvQOI7TuAEL4mG2_oY9NnpudCG2pYIJw&usqp=CAU" />
+        </button>
+    </div>
+
+
+   
+
+  <section id ="registerTeams">
+      <div id="teamsJoin">
+    <h1>Register Teams </h1>
+    <form action="">
+        <label for="">Host Team</label>
+        <select name="Innings" id="nameone">
+            <option disabled selected >--select--</option>
+            <option value="IND"> INDIA </option>
+            <option value="PAK"> PAKISTAN </option>
+            <option value='ENG'> ENGLAND </option>
+            <option value="AUS"> AUSTRELIA </option>
+            <option value="NZ"> NEW ZELAND </option>
+            <option value="SA"> SOUTH AFRICA </option>
+            <option value="WI"> WEST INDIES </option>
+            <option value="SL"> SHRILANKA </option>
+            <option value="BNG"> BANGLADESH </option>
+            <option value="AFG"> AFGANISTAN </option>
+        </select>
+        <label for="">Participating team</label>
+        <select name="Innings" id="nametwo">
+            <option disabled selected >--select--</option>
+            <option value="IND"> INDIA </option>
+            <option value="PAK"> PAKISTAN </option>
+            <option value='ENG'> ENGLAND </option>
+            <option value="AUS"> AUSTRELIA </option>
+            <option value="NZ"> NEW ZELAND </option>
+            <option value="SA"> SOUTH AFRICA </option>
+            <option value="WI"> WEST INDIES </option>
+            <option value="SL"> SHRILANKA </option>
+            <option value="BNG"> BANGLADESH </option>
+            <option value="AFG"> AFGANISTAN </option>
+        </select>
+   
+        <label for="">overs</label>
+        <input type="number" id="totalOvers" placeholder="Total Overs" />
+    </form>
+    </div>
+
+    <div id="toss">
+        <h1>Toss Result</h1>
+        <form action="">
+            <label>toss winning side </label>
+            <select name="Innings" id="tossWinner">
+                <option disabled selected >--select--</option>
+                <option value="IND"> INDIA </option>
+                <option value="PAK"> PAKISTAN </option>
+                <option value='ENG'> ENGLAND </option>
+                <option value="AUS"> AUSTRELIA </option>
+                <option value="NZ"> NEW ZELAND </option>
+                <option value="SA"> SOUTH AFRICA </option>
+                <option value="WI"> WEST INDIES </option>
+                <option value="SL"> SHRILANKA </option>
+                <option value="BNG"> BANGLADESH </option>
+                <option value="AFG"> AFGANISTAN </option>
+            </select>
+            <label>chose to</label>
+            <select name="" id="choseTo">
+                <option disabled selected >--select--</option>
+                <option value="bat"> Bat First </option>
+                <option value="bowl"> Bowl First </option>
+                </select>
+        </form>
+    </div>
+
+    <input id="teamSubmitButton" type="button" value="start match" />
+
+    
+    </section>
+
+
+
+
+
+<div id="scoreCard">
+
+    <section id ="playingTeams">
+        <div class = "teams">
+            <div id = "team1">
+                <img src="https://cdn.britannica.com/97/1597-050-008F30FA/Flag-India.jpg?w=400&h=235&c=crop" id="img1" alt="team1Logo" />
+                <figcaption id="firstTeam">India</figcaption>
+            </div>
+            <p class = "versus">v/s</p>
+            <div id="team2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStgLImDMKROm3Y9QPRr9dGvnKT6poNht_oeg&usqp=CAU" id="img2" alt="team2Logo" />
+                <figcaption id="secondTeam">Pakistan</figcaption>
+            </div>
+        </div>
+     </section>
+
+   
+    <section id = "match">
+        <p id="inningShower"> 1st innings</p>
+        <div id = "matchData"> 
+            <div id = "matchRecords">
+                <div class = "matchScore">
+                    <div class = "runWicket">
+                        <div id="battingTeam">IND</div>
+                        <div id = "score">0 - 0</div>
+                    </div>
+                    
+                    <div class = "overs">
+                        <div>Overs</div>
+                        <div id = "over">0.0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bgImage">
+        <img src="https://us.123rf.com/450wm/cetkauskas/cetkauskas2305/cetkauskas230500127/204913807-cricket-bat-and-red-ball-on-blue-background-horizontal-sport-theme-poster-greeting-cards-headers.jpg?ver=6" />
+    </section>
+
+    <section id="keys">
+        <div id="updateKeys">
+            <div class="keyType">
+                <button type="button" id="noBall">No Ball</button>
+                <button type="button" id="out">Out</button>
+                <button type="button" id="byes">B/LB</button>
+                <button type="button" id="wide">Wide</button>
+            </div>
+            <div class = "keyType">
+                <button type="button" id="one">One</button>
+                <button type="button" id="two">Two</button>
+                <button type="button" id="three">Three</button>
+                <button type="button" id="four">Four</button>
+            </div>
+            <div class="keyType">
+                <button type="button" id="five">Five</button>
+                <button type="button" id="six">Six</button>
+                <button type="button" id="zero">Zero</button>
+                <button type="button" id="undo">UNDO</button>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<input id="scoreStart" type="button" value="Start Match" />
+
+
+<div id="declare">
+
+    <section id ="playingTeams2">
+        <div class = "teams">
+            <div class = "team1">
+                <img src="https://cdn.britannica.com/97/1597-050-008F30FA/Flag-India.jpg?w=400&h=235&c=crop" alt="India logo" />
+                <figcaption>India</figcaption>
+            </div>
+            <p class = "versus">v/s</p>
+            <div class="team2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStgLImDMKROm3Y9QPRr9dGvnKT6poNht_oeg&usqp=CAU" alt="pakistan logo" />
+                <figcaption>Pakistan</figcaption>
+            </div>
+        </div>
+     </section>
+
+     <section id="winnerAnouncement">
+        <div></div>
+     </section>
+
+     <section id="bgImage">
+        <img src="https://us.123rf.com/450wm/cetkauskas/cetkauskas2305/cetkauskas230500127/204913807-cricket-bat-and-red-ball-on-blue-background-horizontal-sport-theme-poster-greeting-cards-headers.jpg?ver=6" />
+    </section>
+
+    <section id="trophy">
+        <div></div>
+    </section>
+
+</div>
+
+
+</body>
+</html>
+

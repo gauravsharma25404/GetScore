@@ -1,0 +1,18 @@
+{
+    "lang": "en",
+    "dir": "ltr",
+    "name": "GetScore",
+
+    "icons": [{
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }],
+    "scope": "/scorecard_cricket",
+    "id": "superracer",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "theme_color": "aliceblue",
+    "background_color": "black"
+  }

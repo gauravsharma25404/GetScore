@@ -1,0 +1,337 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #272829;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#scorecard{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#playingTeams{
+    width: 100vw;
+    margin: 3vh 0;
+}
+#playingTeams .teams{
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#playingTeams .teams #team1,#playingTeams .teams #team2{
+    text-align: center;
+    width: 40%;
+} 
+#playingTeams .teams #team1 img,#playingTeams .teams #team2 img{
+  max-height: 20vh;
+}
+.versus{
+    font-size: 2vh;
+    color: red;
+}
+#playingTeams .teams figcaption{
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+
+}
+#back img{
+  max-height: 3vh;
+}
+#match{
+    width: 100vw;
+    background: #000;
+    flex: 1;
+}
+ #match #matchData{
+    /* margin: ; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    /* border: 2px solid black; */
+}
+
+#match #matchData #matchRecords{
+    /* border: 2px solid black;  */
+    /* margin: 0px 180px 0px 200px; */
+    width: 60%;
+    height: 25;
+    margin: auto;
+    position: relative;
+    top: 0px;
+}
+#match #matchData #matchRecords .matchScore{
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 48, 49, 0.892);
+    border-radius: 2px 2px 8px 8px;
+    /* width: 60%; */
+    
+}
+#match #matchData #matchRecords .matchScore .runWicket{
+    /* border: 2px solid black; */
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(47, 45, 45);
+    text-align: center;
+    /* padding: 25px 80px; */
+    color: white;
+    white-space: nowrap;
+    width: 50%;
+    /* white-space: pre; */
+    /* white-space: normal; */
+}
+#match #matchData #matchRecords .matchScore .overs{
+    /* border: 2px solid black; */
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(47, 45, 45);
+    text-align: center;
+    /* padding: 25px 50px; */
+    color: white;
+    width: 50%;
+}
+
+#match #matchData #matchRecords .runRate{
+    /* border: 2px solid black; */
+}
+#match #matchData #matchRecords .currentRunRate{
+    /* border: 2px solid black; */
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0px;
+    color: rgb(74, 70, 70);
+}
+#match #matchData #matchRecords .requiredRunRate{
+    /* border: 2px solid black; */
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0px;
+    color: rgb(74, 70, 70);
+}
+#match #matchData #matchRecords .neededRuns{
+    /* border: 2px solid black; */
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0px;
+    color: rgb(74, 70, 70);
+}
+#match #matchData #matchRecords .neededRuns spam{
+    color: rgb(226, 198, 39);
+}
+
+#updateKeys{
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    flex: 1;
+}
+.keyType button{
+   font-size: 20px;
+   width: 24%;
+   height: 9vh;
+}
+.updateNoballInnerKeys{
+    position: absolute;
+    top: 60vh;
+    left: 20vw;
+    width: 65%;
+    text-align: center;
+}
+.updateNoballInnerKeys .innerKeytype button{
+    width: 20%;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 1%;
+    height: 4vh;
+}
+.updateNoballInnerKeys .popupForNoball{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 5px;
+    color: yellow;
+    text-align: center;
+    /* color: white; */
+}
+
+#timeClock .timer{
+    border: 2px solid black; 
+    width: 30vw;
+    text-align: center;
+}
+#timeClock .timer .checkTime{
+   border: 2px solid black;
+   font-size: 15px;
+   font-weight: 400;
+   font-family: sans-serif;
+   width: 100%;
+}
+#timeClock .timer .duration{
+   border: 2px solid black; 
+   display : flex;
+   align-items: center;
+   gap: 15px;
+   padding: 0px 50px;
+   width: 100%;
+}
+
+
+
+#toss{
+    display: none;
+}
+#scoreCard{
+    display: none;
+}
+#scoreStart{
+    display: none;
+}
+#back{
+    display: none;
+    width: 40px;
+  
+}
+#bgImage img{
+    width: 100vw;
+    max-height: 100px;
+} 
+#declare{
+    display: none;
+}
+#innermatchData{
+    color: rgb(212, 118, 45);
+    font-size: 20px;
+    margin: auto;
+}
+#nextInning{
+    background-color: rgb(31, 31, 34);
+    width: 120px;
+    font-size: 15px;
+    color: rgb(150, 150, 148);
+    height: 60px;
+    border-radius: 30px;
+    margin: auto;
+    border: none;
+}
+#declareRes{
+    color: white;
+}
+#declareRes p{
+    margin: auto 10vw;
+    font-size: 22px;
+    width: 100vw;
+}
+#innerimg1{
+    width: 50%;
+}
+#innerimg2{
+    width: 50%;
+}
+#inningShower{
+    color: rgb(233, 169, 51);
+    font-size: 20px;
+    text-align: center;
+}
+
+#firecrakers{
+    min-width: 100%;
+    min-height: 100%;
+    margin-left: 170px;
+    
+  }
+  .content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0%;
+    color: #f1f1f1;
+    width: 90%;
+   padding: 100px;
+    padding-left: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+ }
+#registerTeams #teamsJoin form{
+    background-color: gainsboro;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px 10px;
+    font-weight: bolder;
+    min-width: 60vw;
+    max-width: 80vw;
+    min-height: 30vh;
+    max-height: 100vh;
+}
+#registerTeams #teamsJoin h1{
+    text-align: center;
+    color: white;
+}
+#teamSubmitButton{
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto 40%;
+    padding: 8px 10px;
+    max-height: 8vh;
+    min-height: 4vh;
+    font-weight: bolder;
+}
+#registerTeams label{
+    display: block;
+    padding: 10px 0;
+}
+#registerTeams #toss h1{
+    text-align: center;
+    color: white;
+}
+#registerTeams #toss form{
+    background-color: gainsboro;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    padding: auto;
+    min-height: 20vh;
+    max-height: 40vh;
+    min-width: 40vw;
+    max-width: 60vw;
+    padding: 20px 10px;
+    font-weight: bolder;
+}
+#scoreStart{
+  background-color: gainsboro;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px 35%;
+  max-height: 10vh;
+  min-height: 4vh;
+  min-width: 10vw;
+  max-width: 25vw;
+  font-weight: bolder;
+}
+@media only screen and (max-width : 700px)
+{
+  body{background-color:#272829;}
+}
